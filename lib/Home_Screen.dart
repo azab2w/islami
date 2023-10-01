@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:islami_task/hadeth/hadethTab.dart';
 import 'package:islami_task/quran/QuranTab.dart';
 import 'package:islami_task/radio/radioTab.dart';
+import 'package:islami_task/settingtab.dart';
 import 'package:islami_task/tasbeh/tasbehTab.dart';
 
 class Home_Screen extends StatefulWidget {
@@ -52,6 +53,10 @@ class _Home_ScreenState extends State<Home_Screen> {
             BottomNavigationBarItem(
                 icon: ImageIcon(AssetImage('assets/images/quran.png')),
                 label: 'Quran'),
+            BottomNavigationBarItem(
+                backgroundColor: Color(0xFFB7935F),
+                icon: Icon(Icons.settings),
+                label: 'Settings'),
           ],
         ),
         body: tabs[selectedTabIndex],
@@ -64,5 +69,6 @@ class _Home_ScreenState extends State<Home_Screen> {
     TasbehTab(),
     HadethTab(),
     QuranTab(),
+    settingsTab(),
   ];
 }

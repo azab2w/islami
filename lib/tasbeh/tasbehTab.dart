@@ -24,11 +24,11 @@ class _TasbehTabState extends State<TasbehTab> {
                     child: Image.asset(
                       "assets/images/head_sebha_logo.png",
                     )),
-                Container(
+                SizedBox(
                     height: 390,
                     child: Image.asset("assets/images/body_sebha_logo.png")),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 175 , vertical: 170),
+                  padding: const EdgeInsets.symmetric(horizontal: 175 , vertical: 170),
                   child: Text("$buttonCount" , style: TextStyle(fontSize: 30,
                   color: Color(0xFFB7935F)),
                   ),

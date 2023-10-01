@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:islami_task/Home_Screen.dart';
 import 'package:islami_task/chapterDetails/ChapterdetailsScreen.dart';
+import 'package:islami_task/ui/myThemeData.dart';
 import 'hadeth/hadethTab.dart';
 
 void main() {
@@ -14,31 +15,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-          cardTheme: CardTheme(
-            color: Colors.white,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(18),
-            ),
-            elevation: 18,
-          ),
-          useMaterial3: true,
-          colorScheme: ColorScheme.fromSeed(
-            seedColor: const Color(0xFFB7935F),
-            primary: const Color(0xFFB7935F),
-            secondary: const Color(0xFFB7935F),
-            onPrimary: Colors.white,
-            onSecondary: Colors.black,
-          ),
-          scaffoldBackgroundColor: Colors.transparent,
-          bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-              selectedItemColor: Colors.black,
-              unselectedItemColor: Colors.white,
-              selectedIconTheme: IconThemeData()),
-          appBarTheme: const AppBarTheme(
-            centerTitle: true,
-            backgroundColor: Colors.transparent,
-          )),
+      theme: myThemeData.darktTheme,
+      darkTheme: myThemeData.darktTheme,
       routes: {
         "Home": (BuildContext) => Home_Screen(),
         "DetailsScreen": (BuildContext) => ChapterDetailsScreen(),

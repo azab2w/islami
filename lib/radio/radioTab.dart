@@ -13,7 +13,7 @@ class RadioTab extends StatelessWidget {
             "assets/images/radio1.png",
           ),
         ),
-        Row(
+        const Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Text(

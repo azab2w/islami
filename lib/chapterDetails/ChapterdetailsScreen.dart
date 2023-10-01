@@ -23,7 +23,7 @@ class _ChapterDetailsScreenState extends State<ChapterDetailsScreen> {
         ),
         child: Scaffold(
           appBar: AppBar(
-            title: Text("بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ",style: TextStyle(fontSize: 30),),
+            title: const Text("بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ",style: TextStyle(fontSize: 25),),
           ),
           body: verses.isEmpty?
           Center(child: CircularProgressIndicator())
