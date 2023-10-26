@@ -29,7 +29,7 @@ class _Home_ScreenState extends State<Home_Screen> {
               style: TextStyle(
                   color: Colors.black,
                   fontSize: 35,
-                  fontStyle: FontStyle.normal)),
+                  fontFamily: "assets/font/Monotype Koufi Bold.ttf")),
         ),
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: selectedTabIndex,
@@ -38,7 +38,7 @@ class _Home_ScreenState extends State<Home_Screen> {
               selectedTabIndex = index;
             });
           },
-          items: const [
+          items:  [
             BottomNavigationBarItem(
                 backgroundColor: Color(0xFFB7935F),
                 icon: ImageIcon(AssetImage('assets/images/radio.png')),

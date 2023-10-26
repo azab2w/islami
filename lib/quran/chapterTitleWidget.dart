@@ -17,7 +17,7 @@ class chapterTitleWidget extends StatelessWidget {
           padding: EdgeInsets.all(8),
           alignment: Alignment.center,
           child: Text(
-            "صورة ${title}",
+            "سورة ${title}",
             style: const TextStyle(
               fontSize: 25,
               fontFamily: "assets/font/Monotype Koufi Bold.ttf",
